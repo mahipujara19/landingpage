@@ -1,0 +1,51 @@
+https://www.youtube.com/shorts/sB3ZyHuC-AI?feature=share
+
+
+
+
+
+
+
+
+5bac3252a1b1ef4c3535
+
+
+
+
+
+API Key: 6ed5d8100c59bff2e6e8
+API Secret: e7c85f189633d72a24ca1452e383096266ee1923b5eea4dd530fc48699439e55
+JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiIzNzAxMTAzNC0zOTdmLTRjNjAtYjYxOC04OGRmYjc1NWIwOGEiLCJlbWFpbCI6Im1haGlAaHVwdGVjaHdlYi5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MSwiaWQiOiJGUkExIn0seyJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MSwiaWQiOiJOWUMxIn1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiNmVkNWQ4MTAwYzU5YmZmMmU2ZTgiLCJzY29wZWRLZXlTZWNyZXQiOiJlN2M4NWYxODk2MzNkNzJhMjRjYTE0NTJlMzgzMDk2MjY2ZWUxOTIzYjVlZWE0ZGQ1MzBmYzQ4Njk5NDM5ZTU1IiwiZXhwIjoxODIzMzIzOTg3fQ.SygsZWO-9JvPiPP_Zf1qUlGEbxGeqqW_oNCbFXRaT2c
+
+
+emailjs:service_vx0789p
+
+
+//capta
+
+6Lf7OestAAAAANhpMRC7Cz3W7FrYwvobp7d0yjtc         -site key
+
+6Lf7OestAAAAADa2Kq2CXSdfyrDuoeGVtAkT-hGX        -sereatkey
+
+
+//monkey
+
+https://api.sheetmonkey.io/form/vE9yY3tTWscksEK6QqHEFU
+
+
+
+
+
+not robot
+
+6LeJT-stAAAAAJD9OFuSHK7zcnFIsb0E5qokdDlL  -k
+
+6LeJT-stAAAAACYGz_nMdEk8MqP9XR03GJ71aUOZ  -sk
+
+
+brewhaven
+
+6Lepe-stAAAAAKgWjXr1gbJ3DzLj-Br6Iyg8XqiF
+
+
+6Lepe-stAAAAAIp4OkUkBabxD4xMpx4maOvfzNKA

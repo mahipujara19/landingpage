@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.jpg" border-radius="50%">
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="./assets/logo.jpg" alt="Brew Haven Coffee Logo" class="logo-image">
+                <span>Brew Haven</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section class="hero hero-main" id="home">
+        <div class="hero-content">
+            <span class="eyebrow hero-badge"><span class="pulse-dot"></span> Open today · 7:00 AM – 7:00 PM</span>
+            <h1>Your neighborhood coffee, <span class="highlight">made with care.</span></h1>
+            <p>Freshly roasted coffee, homemade pastries, and a comfortable place to slow down.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="button">View Our Menu</a>
+                <a href="#find-us" class="button button-outline">Find Us</a>
+            </div>
+            <ul class="hero-highlights">
+                <li><strong>☕ Fresh</strong><span>Roasted locally</span></li>
+                <li><strong>🥐 Daily</strong><span>Homemade pastries</span></li>
+                <li><strong>🛋️ Cozy</strong><span>Free Wi-Fi &amp; seating</span></li>
+            </ul>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-wrapper">
+                <img src="./assets/mainlogo.jpg" alt="Cozy Cafe Ambiance" class="hero-img">
+            </div>
+            <div class="hero-float-card hero-float-top">
+                <img src="./assets/latte.jpg" alt="" aria-hidden="true">
+                <div>
+                    <strong>Classic Latte</strong>
+                    <span>Today's favorite · $5.00</span>
+                </div>
+            </div>
+            <div class="hero-float-card hero-float-bottom">
+                <span class="float-icon">⭐</span>
+                <div>
+                    <strong>Loved by locals</strong>
+                    <span>Your daily coffee stop</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section id="menu">
+        <div class="section-heading reveal-on-scroll">
+            <span class="eyebrow">What we serve</span>
+            <h2>Our Menu</h2>
+            <p>Simple drinks, quality ingredients, and something for everyone.</p>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-card reveal-on-scroll">
+                <div class="menu-img-frame">
+                    <img src="./assets/latte.jpg" alt="Classic Latte" class="menu-item-img">
+                </div>
+                <h3>Classic Latte</h3>
+                <p>Espresso with steamed milk and a smooth finish.</p>
+                <span class="price">$5.00</span>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-card reveal-on-scroll">
+                <div class="menu-img-frame">
+                    <img src="./assets/capp.jpg" alt="Cappuccino" class="menu-item-img">
+                </div>
+                <h3>Cappuccino</h3>
+                <p>Rich espresso topped with creamy milk foam.</p>
+                <span class="price">$4.50</span>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-card reveal-on-scroll">
+                <div class="menu-img-frame">
+                    <img src="./assets/ameri.jpg" alt="Americano" class="menu-item-img">
+                </div>
+                <h3>Americano</h3>
+                <p>Espresso and hot water for a clean, bold flavor.</p>
+                <span class="price">$3.50</span>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="menu-card reveal-on-scroll">
+                <div class="menu-img-frame">
+                    <img src="./assets/mocha.jpg" alt="Mocha" class="menu-item-img">
+                </div>
+                <h3>Mocha</h3>
+                <p>Espresso, chocolate, and steamed milk.</p>
+                <span class="price">$5.50</span>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="menu-card reveal-on-scroll">
+                <div class="menu-img-frame">
+                    <img src="./assets/coldbrew.jpg" alt="Cold Brew" class="menu-item-img">
+                </div>
+                <h3>Cold Brew</h3>
+                <p>Smooth, refreshing coffee brewed cold for hours.</p>
+                <span class="price">$4.75</span>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="menu-card reveal-on-scroll">
+                <div class="menu-img-frame">
+                    <img src="./assets/cc.jpg" alt="Chocolate Croissant" class="menu-item-img">
+                </div>
+                <h3>Chocolate Croissant</h3>
+                <p>Flaky pastry filled with rich dark chocolate.</p>
+                <span class="price">$4.00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Narrative About Section -->
+    <section class="about-section" id="about">
+        <div class="about-wrapper">
+            <div class="about-graphic-side">
+                <img src="./assets/artson.jpg" alt="Coffee Artisan Roasting" class="about-img reveal-on-scroll">
+            </div>
+            <div class="about-content reveal-on-scroll">
+                <span class="eyebrow">Our story</span>
+                <h2>A small coffee shop with a big heart.</h2>
+                <p>Brew Haven started with a simple idea: create a place where people could enjoy great coffee and feel at home.</p>
+                <p>We work with independent roasters and local bakers to bring our community fresh coffee and food every day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Location Section -->
+    <!-- Replace your current #find-us block with this -->
+<section id="find-us" class="hero reveal-on-scroll">
+  <div class="find-us-dashboard">
+    <span class="eyebrow">Find Our Haven</span>
+    <h2>Come On In</h2>
+    <p class="dashboard-description">
+      We're tucked away in a cozy corner of the neighborhood. Stop by for fresh pour-overs, warm pastries, and a quiet place to slow down.
+    </p>
+    
+    <!-- Centered layout blocks for easy reading -->
+    <div class="dashboard-grid">
+      <div class="dashboard-item">
+        <span class="dashboard-icon">📍</span>
+        <h3>Our Address</h3>
+        <p>123 Coffee Lane, Brewtown, USA</p>
+      </div>
+      
+      <div class="dashboard-item">
+        <span class="dashboard-icon">🕒</span>
+        <h3>Open Daily</h3>
+        <p>7:00 AM – 7:00 PM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+
+
+
+    <!-- Structured Contact Segment -->
+    <section id="contact">
+        <div class="section-heading reveal-on-scroll">
+            <span class="eyebrow">Get in touch</span>
+            <h2>Contact Us</h2>
+            <p>Questions, catering, events or feedback — we'd love to hear from you. We usually reply within a day.</p>
+        </div>
+
+        <div class="contact-layout">
+            <!-- Contact info panel -->
+            <aside class="contact-info reveal-on-scroll">
+                <h3>Let's talk coffee</h3>
+                <p class="contact-info-intro">Reach us whichever way suits you best.</p>
+
+                <ul class="contact-methods">
+                    <li>
+                        <span class="method-icon">📞</span>
+                        <div>
+                            <span class="method-label">Call us</span>
+                            <a href="tel:+15550192834">+1 (555) 019-2834</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-icon">✉️</span>
+                        <div>
+                            <span class="method-label">Email us</span>
+                            <a href="mailto:hello@brewhavencoffee.com">hello@brewhavencoffee.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-icon">📍</span>
+                        <div>
+                            <span class="method-label">Visit us</span>
+                            <span>123 Coffee Lane, Brewtown, USA</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-icon">🕒</span>
+                        <div>
+                            <span class="method-label">Opening hours</span>
+                            <span>Every day, 7:00 AM – 7:00 PM</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="contact-response">
+                    <span class="pulse-dot"></span>
+                    Average reply time: under 24 hours
+                </div>
+            </aside>
+
+            <!-- Contact form -->
+            <form id="contact-form" class="contact-form reveal-on-scroll" novalidate action="https://api.sheetmonkey.io/form/vE9yY3tTWscksEK6QqHEFU" method="POST">
+                <fieldset class="topic-group">
+                    <div style="display:none !important; visibility:hidden !important;" aria-hidden="true">
+                        <input type="text" id="pot_of_honey" name="honeypot" tabindex="-1" autocomplete="off">
+                    </div>
+                    <!-- NEW: Captcha Token Field -->
+                        <!-- <input type="hidden" id="recaptcha_token" name="recaptcha_token" value=""> -->
+                    <legend>What can we help with?</legend>
+                    <div class="topic-chips">
+                        <label class="chip"><input type="radio" name="topic" value="General question" checked><span>💬 General</span></label>
+                        <label class="chip"><input type="radio" name="topic" value="Catering"><span>🧁 Catering</span></label>
+                        <label class="chip"><input type="radio" name="topic" value="Private event"><span>🎉 Events</span></label>
+                        <label class="chip"><input type="radio" name="topic" value="Feedback"><span>⭐ Feedback</span></label>
+                    </div>
+                </fieldset>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Alex Morgan" autocomplete="name" maxlength="30" aria-describedby="name-error">
+                        <span id="name-error" class="field-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" aria-describedby="email-error">
+                        <span id="email-error" class="field-error" aria-live="polite"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone <span class="optional">(optional)</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="555 000 0000" autocomplete="tel" inputmode="numeric" maxlength="14" aria-describedby="phone-error">
+                    <span id="phone-error" class="field-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Tell us a little about what you need..." aria-describedby="message-error"></textarea>
+                    <div class="field-footer">
+                        <span id="message-error" class="field-error" aria-live="polite"></span>
+                        <span class="char-count"><span id="message-count">0</span>/500</span>
+                    </div>
+                </div>
+                <!-- REMOVE: <input type="hidden" id="recaptcha_token"...> -->
+
+<!-- ADD: This visible reCAPTCHA Checkbox placeholder -->
+<div class="form-group">
+  <div class="g-recaptcha" data-sitekey="6LeJT-stAAAAAJD9OFuSHK7zcnFIsb0E5qokdDlL"></div>
+  <span class="field-error" id="captcha-error"></span>
+</div>
+
+                <!-- <div class="g-recaptcha form-group" data-sitekey="6LeJT-stAAAAAJD9OFuSHK7zcnFIsb0E5qokdDlL"></div> -->
+
+                <button type="submit" class="button contact-submit">
+                    <span class="btn-label">Send Message</span>
+                    <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+                <p class="form-note">🔒 We'll only use your details to reply to you.</p>
+                <p id="form-status" class="form-status" role="alert" aria-live="polite"></p>
+
+                <!-- Success state (shown after a valid submit) -->
+                <div class="form-success" id="form-success" role="status" hidden>
+                    <span class="success-icon">✓</span>
+                    <h3>Thanks, <span id="success-name">friend</span>!</h3>
+                    <p>Your message was sent</p>
+                    <button type="button" class="button button-outline" id="send-another">Send another message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Polished Brand Footer -->
+   <footer class="site-footer">
+    <!-- Top Action Bar: Brand Intro -->
+    <div class="footer-top">
+        <div class="footer-brand-pitch">
+            <h3 class="footer-logo">☕ Brew Haven</h3>
+            <p>Crafting flawless mornings with sustainably grown beans and artisan roasting techniques.</p>
+
+            <div class="footer-nav-col">
+            <h5>Follow US</h5>
+            <div class="social-links-wrapper">
+                <a href="#" class="social-icon-btn" aria-label="Instagram">📸</a>
+                <a href="#" class="social-icon-btn" aria-label="Facebook">👥</a>
+            </div>
+        </div>
+
+        </div>
+        
+             <div class="footer-nav-col">
+            <h5>Explore</h5>
+            <ul>
+                <li><a href="#home">Home Base</a></li>
+                <li><a href="#menu">The Daily Menu</a></li>
+                <li><a href="#about">Our Coffee Journey</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+           <div class="footer-nav-col">
+            <h5>Get in Touch</h5>
+            <p class="contact-item">📍 123 Coffee Lane, Roast City</p>
+            <p class="contact-item">✉️ hello@brewhavencoffee.com</p>
+            <p class="contact-item">📞 +1 (555) 019-2834</p>
+        </div>
+    </div>
+
+
+    <!-- Bottom Legals -->
+    <div class="footer-bottom-bar">
+        <p>&copy; 2026 Brew Haven Coffee. All rights reserved.</p>
+        <div class="legal-sub-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
