@@ -24,6 +24,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#find-us">Find Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -32,7 +33,7 @@
     <!-- Hero Showcase Section -->
     <section class="hero hero-main" id="home">
         <div class="hero-content">
-            <span class="eyebrow hero-badge"><span class="pulse-dot"></span> Open today · 7:00 AM – 7:00 PM</span>
+            <span class="eyebrow hero-badge" id="hero-status"><span class="pulse-dot"></span> <span id="hero-status-text">Open today · 7:00 AM – 7:00 PM</span></span>
             <h1>Your neighborhood coffee, <span class="highlight">made with care.</span></h1>
             <p>Freshly roasted coffee, homemade pastries, and a comfortable place to slow down.</p>
             <div class="hero-actions">
@@ -74,11 +75,19 @@
             <p>Simple drinks, quality ingredients, and something for everyone.</p>
         </div>
 
+        <div class="menu-filters reveal-on-scroll" role="group" aria-label="Filter the menu">
+            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="coffee" aria-pressed="false">☕ Coffee</button>
+            <button type="button" class="filter-btn" data-filter="pastry" aria-pressed="false">🥐 Pastries</button>
+            <button type="button" class="filter-btn" data-filter="favorites" aria-pressed="false">♥ Favorites <span class="fav-count" id="fav-count">0</span></button>
+        </div>
+
         <div class="menu-grid">
             <!-- Item 1 -->
-            <div class="menu-card reveal-on-scroll">
+            <div class="menu-card reveal-on-scroll" data-id="latte" data-category="coffee">
                 <div class="menu-img-frame">
-                    <img src="./assets/latte.jpg" alt="Classic Latte" class="menu-item-img">
+                    <img src="./assets/latte.jpg" alt="Classic Latte" class="menu-item-img" loading="lazy">
+                    <button type="button" class="fav-btn" aria-pressed="false" aria-label="Save Classic Latte to favorites">♡</button>
                 </div>
                 <h3>Classic Latte</h3>
                 <p>Espresso with steamed milk and a smooth finish.</p>
@@ -86,9 +95,10 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="menu-card reveal-on-scroll">
+            <div class="menu-card reveal-on-scroll" data-id="cappuccino" data-category="coffee">
                 <div class="menu-img-frame">
-                    <img src="./assets/capp.jpg" alt="Cappuccino" class="menu-item-img">
+                    <img src="./assets/capp.jpg" alt="Cappuccino" class="menu-item-img" loading="lazy">
+                    <button type="button" class="fav-btn" aria-pressed="false" aria-label="Save Cappuccino to favorites">♡</button>
                 </div>
                 <h3>Cappuccino</h3>
                 <p>Rich espresso topped with creamy milk foam.</p>
@@ -96,9 +106,10 @@
             </div>
 
             <!-- Item 3 -->
-            <div class="menu-card reveal-on-scroll">
+            <div class="menu-card reveal-on-scroll" data-id="americano" data-category="coffee">
                 <div class="menu-img-frame">
-                    <img src="./assets/ameri.jpg" alt="Americano" class="menu-item-img">
+                    <img src="./assets/ameri.jpg" alt="Americano" class="menu-item-img" loading="lazy">
+                    <button type="button" class="fav-btn" aria-pressed="false" aria-label="Save Americano to favorites">♡</button>
                 </div>
                 <h3>Americano</h3>
                 <p>Espresso and hot water for a clean, bold flavor.</p>
@@ -106,9 +117,10 @@
             </div>
 
             <!-- Item 4 -->
-            <div class="menu-card reveal-on-scroll">
+            <div class="menu-card reveal-on-scroll" data-id="mocha" data-category="coffee">
                 <div class="menu-img-frame">
-                    <img src="./assets/mocha.jpg" alt="Mocha" class="menu-item-img">
+                    <img src="./assets/mocha.jpg" alt="Mocha" class="menu-item-img" loading="lazy">
+                    <button type="button" class="fav-btn" aria-pressed="false" aria-label="Save Mocha to favorites">♡</button>
                 </div>
                 <h3>Mocha</h3>
                 <p>Espresso, chocolate, and steamed milk.</p>
@@ -116,9 +128,10 @@
             </div>
 
             <!-- Item 5 -->
-            <div class="menu-card reveal-on-scroll">
+            <div class="menu-card reveal-on-scroll" data-id="cold-brew" data-category="coffee">
                 <div class="menu-img-frame">
-                    <img src="./assets/coldbrew.jpg" alt="Cold Brew" class="menu-item-img">
+                    <img src="./assets/coldbrew.jpg" alt="Cold Brew" class="menu-item-img" loading="lazy">
+                    <button type="button" class="fav-btn" aria-pressed="false" aria-label="Save Cold Brew to favorites">♡</button>
                 </div>
                 <h3>Cold Brew</h3>
                 <p>Smooth, refreshing coffee brewed cold for hours.</p>
@@ -126,61 +139,111 @@
             </div>
 
             <!-- Item 6 -->
-            <div class="menu-card reveal-on-scroll">
+            <div class="menu-card reveal-on-scroll" data-id="chocolate-croissant" data-category="pastry">
                 <div class="menu-img-frame">
-                    <img src="./assets/cc.jpg" alt="Chocolate Croissant" class="menu-item-img">
+                    <img src="./assets/cc.jpg" alt="Chocolate Croissant" class="menu-item-img" loading="lazy">
+                    <button type="button" class="fav-btn" aria-pressed="false" aria-label="Save Chocolate Croissant to favorites">♡</button>
                 </div>
                 <h3>Chocolate Croissant</h3>
                 <p>Flaky pastry filled with rich dark chocolate.</p>
                 <span class="price">$4.00</span>
             </div>
         </div>
+        <p class="menu-empty" id="menu-empty" hidden>No favorites yet — tap the ♡ on any drink or pastry to save it here.</p>
     </section>
 
     <!-- Narrative About Section -->
     <section class="about-section" id="about">
         <div class="about-wrapper">
-            <div class="about-graphic-side">
-                <img src="./assets/artson.jpg" alt="Coffee Artisan Roasting" class="about-img reveal-on-scroll">
+            <div class="about-graphic-side reveal-on-scroll">
+                <img src="./assets/artson.jpg" alt="Coffee Artisan Roasting" class="about-img" loading="lazy">
+                <div class="about-badge">
+                    <strong>Since 2015</strong>
+                    <span>Brewing in Ahmedabad</span>
+                </div>
             </div>
             <div class="about-content reveal-on-scroll">
                 <span class="eyebrow">Our story</span>
                 <h2>A small coffee shop with a big heart.</h2>
                 <p>Brew Haven started with a simple idea: create a place where people could enjoy great coffee and feel at home.</p>
                 <p>We work with independent roasters and local bakers to bring our community fresh coffee and food every day.</p>
+
+                <ul class="about-stats">
+                    <li><strong data-count="10">10</strong><span>Years brewing</span></li>
+                    <li><strong data-count="250" data-suffix="k+">250k+</strong><span>Cups poured</span></li>
+                    <li><strong data-count="12">12</strong><span>Local partners</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="about-values">
+            <li class="value-card reveal-on-scroll">
+                <span class="value-icon">🌱</span>
+                <h3>Ethically sourced</h3>
+                <p>Beans from farms that are paid fairly and grow responsibly.</p>
+            </li>
+            <li class="value-card reveal-on-scroll">
+                <span class="value-icon">🔥</span>
+                <h3>Small-batch roasted</h3>
+                <p>Roasted in small batches every week, so every cup tastes fresh.</p>
+            </li>
+            <li class="value-card reveal-on-scroll">
+                <span class="value-icon">🤝</span>
+                <h3>Community first</h3>
+                <p>Local bakers, local artists, and a table that's always open for you.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Location Section -->
+    <section id="find-us">
+        <div class="section-heading reveal-on-scroll">
+            <span class="eyebrow">Find our haven</span>
+            <h2>Come On In</h2>
+            <p>We're tucked away in a cozy corner of the neighborhood. Stop by for fresh pour-overs, warm pastries, and a quiet place to slow down.</p>
+        </div>
+
+        <div class="find-us-layout">
+            <div class="find-us-card reveal-on-scroll">
+                <div class="status-pill" id="open-status">
+                    <span class="status-dot"></span>
+                    <span id="open-status-text">Open daily, 7:00 AM – 7:00 PM</span>
+                </div>
+
+                <div class="find-us-block">
+                    <h3><span aria-hidden="true">📍</span> Address</h3>
+                    <p class="find-us-address" id="shop-address">Parijat Bungalows, near Pakwan Cross Road, Bodakdev, Ahmedabad, Gujarat 380054</p>
+                    <button type="button" class="text-btn" id="copy-address">📋 Copy address</button>
+                </div>
+
+                <div class="find-us-block">
+                    <h3><span aria-hidden="true">🕒</span> Opening hours</h3>
+                    <ul class="hours-list" id="hours-list">
+                        <li><span>Monday – Sunday</span><span>7:00 AM – 7:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="distance-box">
+                    <p class="distance-result" id="distance-result" aria-live="polite">
+                        Share your location to see how far you are from us.
+                    </p>
+                    <div class="distance-actions">
+                        <button type="button" class="button" id="locate-btn">📡 How far am I?</button>
+                        <a class="button button-outline" id="directions-link" target="_blank" rel="noopener"
+                           href="https://www.google.com/maps/dir/?api=1&amp;destination=23.0396,72.5113">🧭 Directions</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="find-us-map reveal-on-scroll">
+                <iframe
+                    title="Map showing the Brew Haven location"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=72.5013%2C23.0336%2C72.5213%2C23.0456&amp;layer=mapnik&amp;marker=23.0396%2C72.5113"
+                    loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Dynamic Location Section -->
-    <!-- Replace your current #find-us block with this -->
-<section id="find-us" class="hero reveal-on-scroll">
-  <div class="find-us-dashboard">
-    <span class="eyebrow">Find Our Haven</span>
-    <h2>Come On In</h2>
-    <p class="dashboard-description">
-      We're tucked away in a cozy corner of the neighborhood. Stop by for fresh pour-overs, warm pastries, and a quiet place to slow down.
-    </p>
-    
-    <!-- Centered layout blocks for easy reading -->
-    <div class="dashboard-grid">
-      <div class="dashboard-item">
-        <span class="dashboard-icon">📍</span>
-        <h3>Our Address</h3>
-        <p>123 Coffee Lane, Brewtown, USA</p>
-      </div>
-      
-      <div class="dashboard-item">
-        <span class="dashboard-icon">🕒</span>
-        <h3>Open Daily</h3>
-        <p>7:00 AM – 7:00 PM</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-</section>
 
 
 
@@ -217,7 +280,7 @@
                         <span class="method-icon">📍</span>
                         <div>
                             <span class="method-label">Visit us</span>
-                            <span>123 Coffee Lane, Brewtown, USA</span>
+                            <span>Parijat Bungalows, near Pakwan Cross Road, Bodakdev, Ahmedabad, Gujarat 380054</span>
                         </div>
                     </li>
                     <li>
@@ -251,6 +314,11 @@
                         <label class="chip"><input type="radio" name="topic" value="Feedback"><span>⭐ Feedback</span></label>
                     </div>
                 </fieldset>
+
+                <div class="draft-notice" id="draft-notice" hidden>
+                    <span>📝 We restored your unsent message.</span>
+                    <button type="button" class="text-btn" id="discard-draft">Start fresh</button>
+                </div>
 
                 <div class="form-row">
                     <div class="form-group">
@@ -336,7 +404,7 @@
         </div>
            <div class="footer-nav-col">
             <h5>Get in Touch</h5>
-            <p class="contact-item">📍 123 Coffee Lane, Roast City</p>
+            <p class="contact-item">📍 Near Pakwan Cross Road, Ahmedabad</p>
             <p class="contact-item">✉️ hello@brewhavencoffee.com</p>
             <p class="contact-item">📞 +1 (555) 019-2834</p>
         </div>
@@ -353,6 +421,13 @@
     </div>
 </footer>
 
+
+    <!-- Global UI helpers -->
+    <div class="offline-banner" id="offline-banner" role="status" hidden>
+        📴 You're offline. You can still browse the menu, and your message draft is saved.
+    </div>
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script src="script.js"></script>
 </body>
